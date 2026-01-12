@@ -1,0 +1,161 @@
+Name: Alarms
+Id: g=3293e7cd8de0bb06cc725e017a984470
+Type: AlarmsCategoryFolder
+Children:
+- Name: DigitalAlarm1
+  Id: g=19e6e418cf4955cc5580e176da45cf79
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=8d26dc2cb65f0b89223c33c82c51ad89
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=50de9d3b22611e0db432c801aa1ff4e8
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=35eb1179eabeb7ac6fc0c59ca8084021
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Motor1Alarm"
+      Children:
+      - Name: Mode
+        Id: g=5519151abb70fe86f352aadb6ce59f34
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=9a764ade758b39048bad8abfb180c250
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=18;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=154
+    Direction: Forward
+  - Name: AutoConfirm
+    Id: g=9483e1227b6e498818a0cd48a2732de3
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Message
+    Id: g=0ef4416cdd6064341fc3c9e5341b4f03
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Motor1 alarm"}
+- Name: AnalogAlarm
+  Id: g=0b466c1a261d28f568d25ae860c3a49b
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=08a9acec3b080e463bb0ee22dd479813
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=1619d9a2935af110ed01131dc1c02aad
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Temperature"
+      Children:
+      - Name: Mode
+        Id: g=22422fe7e2904e6b67328ef9a17809ac
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=0faad439a0f9645a9b498e9109241698
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=18;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=154
+    Direction: Forward
+  - Name: HighLimit
+    Id: g=dae773c182a72564299589161256a8e2
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 80.0
+  - Name: Message
+    Id: g=1d6c84e5de1b6c3b1ae2456e764c38c7
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: LowStateMessage
+      Id: g=c0b7fec002183f31c82124625e2fbc87
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: HighStateMessage
+      Id: g=61f3d73c2fc9c704aabb2b9ff1bf6f5e
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Temperature is High"}
+  - Name: AutoConfirm
+    Id: g=3cb35130a57012711aa92f1bd91fd65e
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true

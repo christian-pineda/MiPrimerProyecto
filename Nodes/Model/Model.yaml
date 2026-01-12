@@ -1,0 +1,26 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: Temperature
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Motor1Alarm
+  Type: BaseDataVariableType
+  DataType: Int32
+- File: Types/Types.yaml
+- Name: MyMotor1
+  Id: g=13935bcee78dff85ee3afd866f167b5c
+  Type: MyMotor
+  Children:
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 10
+- Name: MyMotor2
+  Id: g=74576d38f6c5266bf8a149ef19fd26ef
+  Type: MyMotor
+  Children:
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 20
