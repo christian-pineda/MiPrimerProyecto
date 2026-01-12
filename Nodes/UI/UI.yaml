@@ -343,6 +343,15 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Groups/TeamMantenance"
       - Name: Panel5
         Type: NavigationPanelItem
         Children:
@@ -427,7 +436,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/MiPrimerProyecto/UI/Pages/Page3"
+          Value: "/Objects/MiPrimerProyecto/UI/Pages/LenguageSwitching"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -442,7 +451,22 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/MiPrimerProyecto/UI/Pages/Page4"
+          Value: "/Objects/MiPrimerProyecto/UI/Pages/UserLogin"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel12
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/MiPrimerProyecto/UI/Pages/UserManagment"
           Children:
           - Name: Kind
             Type: PropertyType
